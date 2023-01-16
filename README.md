@@ -1,19 +1,6 @@
 # The Complete Cypress 10+ Course: From Zero to Expert!
 
-## Table of Contents
-
--  [About](#about)
--  [Getting Started](#getting_started)
--  [Usage](#usage)
--  [Contributing](../CONTRIBUTING.md)
-
-## About <a name = "about"></a>
-
-Write about 1-2 paragraphs describing the purpose of your project.
-
 ## Getting Started <a name = "getting_started"></a>
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -23,7 +10,6 @@ These instructions will get you a copy of the project up and running on your loc
     <li>Install NodeJS on your machine</li>
     <li>Inside the Project directory, run: "npm init"</li>
     <li>During the init process, make sure set the 'test command' to: "cypress open"</li>
-    <li></li>
 </ol>
 
 #### Install TypeScript
@@ -42,6 +28,14 @@ These instructions will get you a copy of the project up and running on your loc
     <li>Create a new file called: "tsconfig.json" inside your Cypress Folder with the following: https://docs.cypress.io/guides/tooling/typescript-support#Install-TypeScript</li>
     <li>Run again the helloworld test</li>
     <li>In 'package.json' file, add the following to the 'runner' script: "cypress open --e2e --browser chrome"</li>
+</ol>
+
+#### Install xPath Dependency
+
+<ol>
+    <li>Run: 'npm install -D cypress-xpath'</li>
+    <li>In your framework support file [cypress/support/e2e.ts] add: require('cypress-xpath')</li>
+    <li>Add "cypress-xpath" to your 'tsconfig.json file</li>
 </ol>
 
 ### Installing
