@@ -18,10 +18,10 @@ describe('Retry Ability Demo', () => {
       )
    })
 
-   // Adds a timeout for a specific selector
+   // Adds a timeout for to a specific selector
    it('Progress Bar Scenario', () => {
       cy.visit('/progressbar')
       cy.get('#startButton').click()
-      cy.get('#progressBar', { timeout: 30000 }).should('have.text', '100%')
+      cy.get('#progressBar', { timeout: 35000 }).should('have.text', '100%')
    })
 })

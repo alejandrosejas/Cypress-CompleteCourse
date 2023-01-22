@@ -30,12 +30,21 @@
     <li>In 'package.json' file, add the following to the 'runner' script: "cypress open --e2e --browser chrome"</li>
 </ol>
 
-#### Install xPath Dependency
+#### Install 'xPath Dependency' Package
 
 <ol>
     <li>Run: 'npm install -D cypress-xpath'</li>
     <li>In your framework support file [cypress/support/e2e.ts] add: require('cypress-xpath')</li>
     <li>Add "cypress-xpath" to your 'tsconfig.json file</li>
+</ol>
+
+#### Install 'Cypress Real Events' Package
+
+<ol>
+    <li>Run: 'npm i -D cypress-real-events'</li>
+    <li>Add the following into your cypress/support/e2e.ts file</li>
+    <li>```import "cypress-real-events";```</li>
+    <li>Include Ts declarations, add 'cypress-real-events' to the Types section of your tsconfig.json file</li>
 </ol>
 
 ### Installing
